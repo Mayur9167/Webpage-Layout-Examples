@@ -9,30 +9,39 @@ body{
     text-align: center;
 }
 
+
 h1,h2,h3,h4,h5,h6{
     margin: 0;
     padding: 0;
 }
 .fixed {
+    font-weight: 400;
+    font-size:larger;
     font-family: 'Delicious Handrawn', cursive;
     display: block;
     width: 360px; /* set the width of the body */
     margin: 0 auto; /* center the body horizontally */
   }
 
+
+  li{
+    text-align: center;
+    padding-right: 40px;
+  }
   .list-n{
     list-style: none;
   }
   a{
+    
     text-decoration: none;
   }
   a:hover{
+    
     font-weight: 600;
     font-size: larger;
     text-decoration: none;
     color:rgb(19, 165, 14);
   }
-
 
 
 
@@ -48,85 +57,38 @@ h1,h2,h3,h4,h5,h6{
     justify-content: center;
   }
   .adaptive-item {
+    padding-top: 50px;
     width: 200px; /* set the width of each item */
     margin: 10px; /* add some spacing between items */
   }
+  .thumbnail { 
+    top:-50px; 
+    left:-35px; 
+    display:block; 
+    z-index:999; 
+    cursor: pointer; 
+    
+    -webkit-transition-property: all; 
+    transition-property:all;
+    -webkit-transition-duration: 0.3s; 
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease; 
+    transition-timing-function: ease;
+    } 
+    
+    /*change the number below to scale to the appropriate size*/ 
+    .thumbnail:hover { 
+    transform: scale(1.4); 
+    
+    }
+
+
+
+
+
   @media (max-width: 400px) { /* adjust layout for smaller screens */
     .adaptive-item {
       width: 100%; /* set the width of each item to 100% */
       margin: 10px 0; /* remove spacing between items */
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .parent{
-    background-color: rgb(255, 255, 255);
-    height: 105px;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    width: 105px;
-    gap: 5px;
-    border-radius: 10px;
-}
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.child {
-    background: #0010f5;
-    width: 50px;
-    border-radius: 5px;
-    height: 50px;
-    flex-wrap: wrap;
-}
-
-.child:nth-child(1) {
-    background: #a3ff0f;
-    width: 50px;
-    border-radius: 5px;
-    height: 50px;
-    flex-wrap: wrap;
-}
-.child:nth-child(4) {
-    background:#a3ff0f;
-    ;
-    width: 50px;
-    border-radius: 5px;
-    height: 50px;
-    flex-wrap: wrap;
-}
-.child:nth-child(3) {
-    background: #0010f5;
-    width: 50px;
-    border-radius: 5px;
-    height: 50px;
-    flex-wrap: wrap;
-} */
