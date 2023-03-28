@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Poppins:wght@700&display=swap');
 
 body{
     margin: 0;
@@ -46,6 +46,7 @@ h1,h2,h3,h4,h5,h6{
 
 
   .Adaptive-layout{
+    font-family: 'Poppins', sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -82,12 +83,9 @@ h1,h2,h3,h4,h5,h6{
     }
 
 
-
-
-
-  @media (max-width: 400px) { /* adjust layout for smaller screens */
+  @media (max-width: 340px) { 
     .adaptive-item {
-      width: 100%; /* set the width of each item to 100% */
-      margin: 10px 0; /* remove spacing between items */
+      width: 100%; 
+      margin: 10px 0;
     }
   }
