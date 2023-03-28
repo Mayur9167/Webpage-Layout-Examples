@@ -1,25 +1,62 @@
 
-.fixed-layout {
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    text-align: center;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+.fixed {
+
+    background-image: url('../night.jpg');
+    font-family: 'Delicious Handrawn', cursive;
+    display: block;
     width: 360px; /* set the width of the body */
     margin: 0 auto; /* center the body horizontally */
   }
 
-
-
-
-
-
-  .adaptive-layout {
-    display: flex; /* use flexbox layout */
-    flex-wrap: wrap; /* allow content to wrap on smaller screens */
-    justify-content: center; /* center content horizontally */
+  .list-n{
+    list-style: none;
   }
-  .adaptive-layout-item {
+  a{
+    text-decoration: none;
+    color:#fff;
+  }
+  a:hover{
+    font-weight: 600;
+    font-size: larger;
+    text-decoration: none;
+    color:rgb(19, 165, 14);
+  }
+
+
+
+
+
+  .Adaptive-layout{
+    background-image: url('../night.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .adaptive {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+  .adaptive-item {
     width: 200px; /* set the width of each item */
     margin: 10px; /* add some spacing between items */
   }
-  @media (max-width: 768px) { /* adjust layout for smaller screens */
-    .adaptive-layout-item {
+  @media (max-width: 400px) { /* adjust layout for smaller screens */
+    .adaptive-item {
       width: 100%; /* set the width of each item to 100% */
       margin: 10px 0; /* remove spacing between items */
     }
